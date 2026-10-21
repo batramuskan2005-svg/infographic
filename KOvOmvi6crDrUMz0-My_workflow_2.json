@@ -1,0 +1,154 @@
+{
+  "name": "My workflow 2",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "196bfae4-43ac-4b1a-8816-8501c6239cdc",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "660b498b-b4be-4fbd-8325-cc66d35d50a9",
+              "name": "Student name",
+              "value": "sia",
+              "type": "string"
+            },
+            {
+              "id": "3652deb2-2be6-4a31-960d-ee537058985c",
+              "name": "Father's name",
+              "value": "naresh",
+              "type": "string"
+            },
+            {
+              "id": "b155f6ee-b7f9-4e73-b220-c6883adcd599",
+              "name": "Email",
+              "value": "sia23@gmail.com",
+              "type": "string"
+            },
+            {
+              "id": "079e6f9d-e707-4d0d-9230-72650479248a",
+              "name": "Phone number",
+              "value": 2984033847,
+              "type": "number"
+            },
+            {
+              "id": "cc049197-66be-44c5-b7bd-068d074620e2",
+              "name": "Course",
+              "value": "B.tech",
+              "type": "string"
+            },
+            {
+              "id": "1abd7f8b-e62e-4d91-942b-fe91bc6d140c",
+              "name": "Batch",
+              "value": 2024,
+              "type": "number"
+            },
+            {
+              "id": "d385fd40-2302-4bf1-8712-b2929798db1e",
+              "name": "Fee",
+              "value": 400000,
+              "type": "number"
+            },
+            {
+              "id": "ef981e71-30c5-40c9-b38c-b7243fe445a2",
+              "name": "Payment status",
+              "value": "pending",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        224,
+        0
+      ],
+      "id": "751ca1c9-25ab-4891-ad47-b120616a8473",
+      "name": "Edit Fields"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "staticData": null,
+  "pinData": {
+    "Edit Fields": [
+      {
+        "json": {
+          "Student name": "sia",
+          "Father's name": "naresh",
+          "Email": "sia23@gmail.com",
+          "Phone number": 2984033847,
+          "Course": "B.tech",
+          "Batch": 2024,
+          "Fee": 400000,
+          "Payment status": "pending"
+        }
+      },
+      {
+        "json": {
+          "Student name": "saurav",
+          "Father's name": "sachin",
+          "Email": "sv422@gmail.com",
+          "Phone number": 8754790947,
+          "Course": "M.tech",
+          "Batch": 2025,
+          "Fee": 600000,
+          "Payment status": "complete"
+        }
+      },
+      {
+        "json": {
+          "Student name": "rahul",
+          "Father's name": "ashok",
+          "Email": "rahul32@gmail.com",
+          "Phone number": 8650933847,
+          "Course": "B.tech",
+          "Batch": 2024,
+          "Fee": 500000,
+          "Payment status": "pending"
+        }
+      },
+      {
+        "json": {
+          "Student name": "priya",
+          "Father's name": "nitin",
+          "Email": "priya07@gmail.com",
+          "Phone number": 298917847,
+          "Course": "B.arch",
+          "Batch": 2024,
+          "Fee": 200000,
+          "Payment status": "complete"
+        }
+      }
+    ]
+  },
+  "triggerCount": 0,
+  "meta": null
+}
